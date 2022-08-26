@@ -11,9 +11,9 @@
 </head>
 <body>
     <div id="app">
-        <p v-for="(v, i) in items.data">{{v.title}}</p>
-        <hr>
         <p>{{items}}</p>
+        <hr>
+        <p v-for="(v, i) in items.data">{{i}} : {{v}}</p>
     </div>
 
     <script>
