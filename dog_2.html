@@ -27,12 +27,11 @@
             data: {
                 photos: []
             },
-            mounted: {
-                getPhotos: function () {
-                    axios.get('https://jungwoonan.github.io/vue_axios/dog.json')
-                      .then( (res) => {this.photos = res.data} )
-                      .catch( error => console.error(err) )
-                }
+            mounted: function () {
+                axios.get('https://jungwoonan.github.io/vue_axios/dog.json')
+                    .then((res) => { this.photos = res.data })
+                    .catch(error => console.error(err))
+
             }
         })
     </script>
