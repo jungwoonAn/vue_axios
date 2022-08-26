@@ -17,11 +17,13 @@
     <script>
         new Vue({
             el: '#app',
-            mounted: function(){
+            methods: {
+                getData: function(){
                     this.$http.get('https://jungwoonan.github.io/vue_axios/demo.json')
                       .then(function(response){
                         console.log(response);
                       });
+                }
             }
         })
     </script>
